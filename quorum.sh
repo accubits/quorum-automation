@@ -10,7 +10,7 @@ apt-get install git
 apt-get update
 git  clone https://gitlab.com/goutham_krishna/quorum.git
 #change directory isn not allowed 
-change quorum-raft-cluster
+change quorum
 #script for getting quorum
 ./get-quorum.sh
 #script for setting up raft
