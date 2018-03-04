@@ -28,6 +28,6 @@ sleep 5
 sleep 5
 ./raft-start.sh
 sleep 5
-jq -c '.[]' input_nodes.json | while read i; do
-	echo "raft.addPeer("$i")"| geth attach /home/ubuntu/script-quorum/quorum/qdata/geth.ipc 
+jq -c '.[]' $PWD/../input_nodes.json | while read i; do
+	echo "raft.addPeer("$i")"| geth attach $PWD/qdata/geth.ipc 
 done
